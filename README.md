@@ -13,5 +13,5 @@ $ sass --style expanded --watch scss/style.scss:style.css
 ## カラーコード
 
 ```
-#ffc600
+#ffc600;
 ```

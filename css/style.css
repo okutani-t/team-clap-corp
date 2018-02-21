@@ -8,16 +8,20 @@ body {
   font-family: "Roboto", "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
   line-height: 1.8;
   font-weight: 500;
-  background: pink; }
+  background: skyblue;
+}
 
 p, ul, ol, dl, table {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 h2, .h2 {
   font-size: 26px;
-  margin: 40px 0 20px; }
+  margin: 40px 0 20px;
+}
 
 h3, h3 {
-  font-size: 22px; }
+  font-size: 22px;
+}
 
 /*# sourceMappingURL=style.css.map */
