@@ -11,7 +11,21 @@
 ?>
 		<?php do_action( 'habakiri_after_contents_content' ); ?>
 	<!-- end #contents --></div>
-	<footer id="footer" class="footer">
+	<footer id="footer" class="footer clearfix">
+		<nav class="footer-nav">
+			<ul>
+				<li><a href="#">会社概要</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+				<li><a href="#">コラム</a></li>
+			</ul>
+		</nav>
+		<nav class="footer-sns">
+			<ul>
+				<li><a href="#"><i class="sns-icon fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="sns-icon fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="sns-icon fab fa-instagram"></i></a></li>
+			</ul>
+		</nav>
 		<?php do_action( 'habakiri_before_footer_content' ); ?>
 
 		<?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>
