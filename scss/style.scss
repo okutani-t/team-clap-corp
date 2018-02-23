@@ -112,3 +112,37 @@ header{
       border-radius: 50%;
     }
   }
+
+  /*----------------
+  column
+  ----------------*/
+  .column-item-box1,
+  .column-item-box2{
+    display:flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+  }
+
+  .column-item-box1{
+    padding-bottom: 50px;
+  }
+
+  .column-item-box2{
+     padding-bottom: 100px;
+  }
+
+  .column-item{
+    border: 2px solid #ffc600;
+    width: 30%;
+    padding: 0.5%;
+    background-color: white;
+    a{width:100%;
+    }
+    img{
+      transition-duration: 1s;
+      width: 100%;
+      :hover{
+        transform: scale(1.03);
+      }
+    }
+  }
