@@ -3,12 +3,30 @@
    Theme Name: habakiri-child
    Template: habakiri
  */
+html {
+  font-size: 62.5%;
+  width: 100%;
+  text-align: center;
+}
+
 body {
   /* ゴシック体の場合 */
   font-family: "Roboto", "Droid Sans", "游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
   line-height: 1.8;
   font-weight: 500;
-  background: skyblue;
+  width: 100%;
+  backgroud: url(../image/ball-demo.jpg);
+  background-attachment: fixed;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 p, ul, ol, dl, table {
@@ -16,12 +34,104 @@ p, ul, ol, dl, table {
 }
 
 h2, .h2 {
-  font-size: 26px;
-  margin: 40px 0 20px;
+  position: relative;
+  font-size: 48px;
+  padding: 100px 0;
+  font-family: 'ヒラギノ角ゴStdN';
+  color: #b8b4b4;
 }
 
 h3, h3 {
-  font-size: 22px;
+  font-size: 18px;
+  font-family: 'ヒラギノ角ゴProN';
+  padding-top: 10px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #222222;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  text-align: center;
+}
+
+.h2-topic {
+  transition: .5s;
+}
+.h2-topic::after {
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 150px;
+  bottom: 33%;
+  right: 42%;
+  border-radius: 4px;
+  background-color: #ffc600;
+}
+
+header {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin: 0 10px;
+}
+
+.logo {
+  float: left;
+  width: 300px;
+  height: 80px;
+  background: url("../image/logo.png") no-repeat;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.global-nav {
+  float: right;
+  padding-top: 25px;
+  font-size: 18px;
+}
+.global-nav li {
+  display: inline-block;
+  padding-right: 15px;
+}
+.global-nav li a {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 5px;
+}
+.global-nav li a :hover {
+  border-bottom: 4px solid #ffc600;
+  transition-duration: .5s;
+}
+.global-nav li:last-child {
+  padding-right: 0;
+}
+
+.motto {
+  font-size: 60px;
+  color: black;
+  padding-bottom: 50px;
+}
+
+.motto-desc {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
