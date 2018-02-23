@@ -147,4 +147,38 @@ about
   padding: 0 30px 80px;
 }
 
+/*----------------
+service
+----------------*/
+.service {
+  background-color: #f2f1f1;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.service .content {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.service p {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  padding: 15px 0 30px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-item {
+  width: 22%;
+}
+.service-item img {
+  width: 100%;
+  border: 7px solid #ffc600;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */
