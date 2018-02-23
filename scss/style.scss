@@ -146,3 +146,38 @@ header{
       }
     }
   }
+
+  /*----------------
+  contact
+  ----------------*/
+  .contact{
+  background-color: #f2f1f1;;
+    padding-bottom: 40px;
+    a{text-align: center;
+    margin: 20px auto;
+    display: block;
+    height: 55px;
+    width: 175px;
+    line-height: 55px;
+    background-color: #ffc600;
+    color:#000;
+    font-size: 2.0rem;
+    border-radius: 15px;
+    border: 1px solid #000;
+      :hover{
+        opacity: 0.7;
+        transition: 1s;
+      }
+      :active{
+        position: relative;
+        top: 3px;
+      }
+      }
+      p{
+        font-size: 2.3rem;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        line-height: 1.5;
+    }
+  }
