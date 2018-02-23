@@ -252,4 +252,64 @@ contact
   line-height: 1.5;
 }
 
+/*----------------
+footer
+----------------*/
+.footer {
+  background-color: #e5e1e1;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 30px 20px 30px;
+}
+
+.footer-nav {
+  float: left;
+  padding-left: 25px;
+}
+.footer-nav li {
+  display: inline-block;
+}
+.footer-nav li a {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 15px;
+  font-size: 14px;
+}
+.footer-nav li a :hover {
+  border-bottom: 4px solid #ffc600;
+  transition-duration: .5s;
+}
+
+.footer-sns {
+  float: right;
+}
+.footer-sns li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.footer-sns a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.sns-icon {
+  height: 50px;
+  line-height: 50px;
+  font-size: 3rem;
+}
+.sns-icon a:hover {
+  color: #666;
+}
+
+.copyright {
+  font-size: 12px;
+  margin: 0 auto;
+  color: black;
+  padding-top: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
