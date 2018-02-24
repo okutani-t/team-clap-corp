@@ -259,3 +259,64 @@ header{
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .5);
   }
+
+  /*----------------
+  responsive
+  ----------------*/
+
+@media screen and (max-width: 767px) {
+  /*--------------------
+  navToggle
+  -----------------------*/
+
+  #navToggle{
+    display:block;
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    top:30px;
+    right:10px;
+    z-index: 2;
+    div{
+      position: realative;
+    }
+    span{
+      position: absolute;
+      display: block;
+      width: 100%;
+      border-bottom: 3px solid black;
+      -webkit-transition: .35s ease-in-out;
+      -moz-transition: .35s ease-in-out;
+      transition: .35s ease-in-out;
+    }
+    span:nth-child(1){
+      top:0;
+    }
+    span:nth-child(2){
+      top:25px;
+    }
+    span:nth-child(3){
+      top:50px;
+    }
+  }
+
+  /*--------------------
+  toggleClass add openNav
+  -----------------------*/
+
+  .openNav #navToggle span:nth-child(1){
+      top: 11px;
+      -webkit-transform:rotate(-45deg);
+      -moz-trasnform:rotate(-45deg);
+      transform:rotate(-45deg);
+
+    }
+    /*2番目と3番目のspanを45度に*/
+    .openNav #navToggle span:nth-child( 2 ),
+    .openNav #navToggle span:nth-child( 3 ){
+      top: 11px;
+      -webkit-transform:rotate(45deg);
+      -moz-transform:rotate(45deg);
+      transform: rotate(45deg);
+    }
+}
