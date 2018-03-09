@@ -14,6 +14,7 @@
     <script src="./js/back-to-top.js"></script>
     <script src="./js/moving-h2.js"></script>
   </head>
+  <?php wp_head(); ?>
   <body>
     <div class="inner">
       <div class="container">
@@ -159,5 +160,7 @@
       <p class="copyright">© 2018 teamclap</p>
      </footer>
      <a id="backTop" href="#"><i class="fas fa-angle-up"></i></a>
+
+     <?php wp_footer(); ?>
   </body>
 </html>
