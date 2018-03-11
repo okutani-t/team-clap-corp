@@ -69,22 +69,22 @@
         <h2 class="h2-topic">SERVICE</h2>
         <div class="content">
           <div class="service-item fadeIn">
-            <img src="http://vccw.test/wp-content/uploads/2018/03/service-image.jpg" alt="">
+            <img src="./images/service-image.jpg" alt="">
             <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
             </p>
           </div>
           <div class="service-item fadeIn">
-            <img src="http://vccw.test/wp-content/uploads/2018/03/service-image.jpg" alt="">
+            <img src="./images/service-image.jpg" alt="">
             <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
             </p>
           </div>
           <div class="service-item fadeIn2">
-            <img src="http://vccw.test/wp-content/uploads/2018/03/service-image.jpg" alt="">
+            <img src="./images/service-image.jpg" alt="">
             <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
             </p>
           </div>
           <div class="service-item fadeIn2">
-            <img src="http://vccw.test/wp-content/uploads/2018/03/service-image.jpg" alt="">
+            <img src="./images/service-image.jpg" alt="">
             <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
             </p>
           </div>
@@ -95,19 +95,19 @@
           <div class="column-item-box1">
            <div class="column-item">
              <a href="#">
-              <img src="http://vccw.test/wp-content/uploads/2018/03/column-img.jpg" alt="">
+              <img src="./images/column-img.jpg" alt="">
               <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
            <div class="column-item">
              <a href="#">
-               <img src="http://vccw.test/wp-content/uploads/2018/03/column-img.jpg" alt="">
+               <img src="./images/column-img.jpg" alt="">
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
            <div class="column-item">
              <a href="#">
-               <img src="http://vccw.test/wp-content/uploads/2018/03/column-img.jpg"  alt="">
+               <img src="./images/column-img.jpg" alt="">
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
@@ -115,19 +115,19 @@
          <div class="column-item-box2">
            <div class="column-item">
              <a href="#">
-               <img src="http://vccw.test/wp-content/uploads/2018/03/column-img.jpg"  alt="">
+               <img src="./images/column-img.jpg" alt="">
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
            <div class="column-item">
              <a href="#">
-               <img src="http://vccw.test/wp-content/uploads/2018/03/column-img.jpg"  alt="">
+               <img src="./images/column-img.jpg" alt="">
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
            <div class="column-item">
              <a href="#">
-              <img src="http://vccw.test/wp-content/uploads/2018/03/column-img.jpg" alt="">
+              <img src="./images/column-img.jpg" alt="">
               <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
