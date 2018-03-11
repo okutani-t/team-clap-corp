@@ -69,7 +69,6 @@
         <h2 class="h2-topic">SERVICE</h2>
         <div class="content">
           <div class="service-item fadeIn">
-            ./images/service-image.jpg
             <img src="./images/service-image.jpg" alt="">
             <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
             </p>
@@ -96,7 +95,6 @@
           <div class="column-item-box1">
            <div class="column-item">
              <a href="#">
-               ./images/column-img.jpg
               <img src="./images/column-img.jpg" alt="">
               <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
