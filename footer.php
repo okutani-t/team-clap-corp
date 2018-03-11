@@ -60,6 +60,7 @@
 		<?php do_action( 'habakiri_after_footer_content' ); ?>
 	<!-- end #footer --></footer>
 <!-- end #container --></div>
+<a id="backTop" href="#"><i class="fas fa-angle-up"></i></a>
 <?php wp_footer(); ?>
 </body>
 </html>
