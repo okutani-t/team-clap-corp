@@ -9,33 +9,21 @@
  * License URI: license.txt
  */
 ?>
-<?php if(is_home()):?>
-	<!DOCTYPE html>
-	<html lang="ja">
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width,initial-scale=1">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css">
-			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-			<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-			<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/humberger.js"></script>
-			<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/back-to-top.js"></script>
-			<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/moving-h2.js"></script>
-		</head>
-    <?php wp_head(); ?>
-     <body>
-	    <div class="inner">
-	      <div class="container">
-<?php else:?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head prefix="og: http://ogp.me/ns# <?php echo ( is_single() || is_page() ) ? 'fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#' : 'fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#' ?>">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/humberger.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/back-to-top.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/moving-h2.js"></script>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
@@ -44,20 +32,19 @@
 </head>
 <body <?php body_class(); ?>>
 <?php do_action( 'habakiri_before_container' ); ?>
-<div id="container">
+<div class="inner">
+	<div id="container" class="container">
 	<?php
 	$header_classes     = Habakiri::get_header_classses();
 	$site_branding_size = Habakiri::get_site_branding_size();
 	$gnav_size          = Habakiri::get_gnav_size();
 	?>
-	<header id="header" class="header <?php echo esc_attr( implode( ' ', $header_classes ) ); ?>">
-		あああああああああああああ
+	<header id="header" class="header">
 		<?php do_action( 'habakiri_before_header_content' ); ?>
 		<div class="container">
 			<div class="row header__content">
 				<div class="col-xs-10 <?php echo esc_attr( $site_branding_size ); ?> header__col">
-					<?php get_template_part( 'modules/site-branding' ); ?>
-				<!-- end .header__col --></div>
+					<!-- end .header__col --></div>
 				<div class="col-xs-2 <?php echo esc_attr( $gnav_size ); ?> header__col global-nav-wrapper clearfix">
 					<?php get_template_part( 'modules/gnav' ); ?>
 					<div id="responsive-btn"></div>
@@ -68,4 +55,3 @@
 	<!-- end #header --></header>
 	<div id="contents">
 		<?php do_action( 'habakiri_before_contents_content' ); ?>
-<?php endif;?>

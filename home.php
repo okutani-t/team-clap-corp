@@ -12,9 +12,11 @@
             </ul>
           </nav>
         </div>
+      </header>
+      <div class="key-visual">
         <h2 class="motto">More Creative. More Clap.</h2>
         <p class="motto-desc">吉祥寺を拠点にしたWeb制作・システム開発のクリエイターチーム</p>
-      </header>
+      </div>
       <section class="about">
        <h2 class="h2-topic">ABOUT</h2>
           <p class="about-desc">
