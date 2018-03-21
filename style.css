@@ -85,6 +85,14 @@ header {
   margin: 0 10px;
 }
 
+.page-header {
+  background-color: white;
+  top: 0;
+  right: 0px;
+  width: 100%;
+  z-index: 99;
+}
+
 .logo {
   float: left;
   width: 300px;
@@ -173,7 +181,9 @@ service
 }
 
 .service-item {
-  width: 45%;
+  position: relative;
+  width: 22%;
+  transition: 1.0s;
 }
 .service-item img {
   width: 100%;
@@ -332,59 +342,6 @@ backTop
 responsive
 ----------------*/
 @media screen and (max-width: 767px) {
-  /*--------------------
-  navToggle
-  -----------------------*/
-  #navToggle {
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 30px;
-    right: 10px;
-    z-index: 2;
-  }
-  #navToggle div {
-    position: realative;
-  }
-  #navToggle span {
-    position: absolute;
-    display: block;
-    width: 100%;
-    border-bottom: 3px solid black;
-    -webkit-transition: .35s ease-in-out;
-    -moz-transition: .35s ease-in-out;
-    transition: .35s ease-in-out;
-  }
-  #navToggle span:nth-child(1) {
-    top: 0;
-  }
-  #navToggle span:nth-child(2) {
-    top: 25px;
-  }
-  #navToggle span:nth-child(3) {
-    top: 50px;
-  }
-
-  /*--------------------
-  toggleClass add openNav
-  -----------------------*/
-  .openNav #navToggle span:nth-child(1) {
-    top: 11px;
-    -webkit-transform: rotate(-45deg);
-    -moz-trasnform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  /*2番目と3番目のspanを45度に*/
-  .openNav #navToggle span:nth-child(2),
-  .openNav #navToggle span:nth-child(3) {
-    top: 11px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
   /*---------------
   common
   -----------------*/
@@ -395,23 +352,27 @@ responsive
   /*----------------
   global-nav
   -------------------*/
-  .global-nav {
-    position: fixed;
-    z-index: 1;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #ffc600;
-    width: 100%;
-  }
-  .global-nav ul li {
-    display: block;
+  .logo {
+    float: none;
     text-align: center;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 0;
-    border-bottom: 1px solid #fff;
+    margin: 5px auto 0;
+  }
+
+  .global-nav {
+    float: none;
+    margin-right: 0;
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  .global-nav ul {
+    padding-left: 0px;
+  }
+  .global-nav li {
+    width: 24%;
+    padding-right: 0;
+    padding-top: 5px;
+    height: 50px;
+    margin-bottom: 10px;
   }
 
   /*----------------
@@ -445,7 +406,7 @@ responsive
   service
   ---------------*/
   .service-item {
-    width: 45%;
+    width: 22%;
   }
 
   .service {

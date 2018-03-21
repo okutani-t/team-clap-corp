@@ -9,6 +9,28 @@
  * License URI: license.txt
  */
 ?>
+<?php if(is_home()):?>
+	<!DOCTYPE html>
+	<html lang="ja">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css">
+			<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+			<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+			<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/humberger.js"></script>
+			<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/back-to-top.js"></script>
+			<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/moving-h2.js"></script>
+		</head>
+    <?php wp_head(); ?>
+     <body>
+	    <div class="inner">
+	      <div class="container">
+<?php else:?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head prefix="og: http://ogp.me/ns# <?php echo ( is_single() || is_page() ) ? 'fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#' : 'fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#' ?>">
@@ -46,3 +68,4 @@
 	<!-- end #header --></header>
 	<div id="contents">
 		<?php do_action( 'habakiri_before_contents_content' ); ?>
+<?php endif;?>
