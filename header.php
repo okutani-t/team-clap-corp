@@ -16,7 +16,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css">
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -32,7 +31,6 @@
 </head>
 <body <?php body_class(); ?>>
 <?php do_action( 'habakiri_before_container' ); ?>
-<div class="inner">
 	<div id="container" class="container">
 	<?php
 	$header_classes     = Habakiri::get_header_classses();

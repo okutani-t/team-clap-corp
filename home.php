@@ -114,7 +114,6 @@
        <a class="ToContactForm" href="#">お問い合わせ</a>
       </section>
     </div><!--container-->
-    </div><!--inner-->
     <?php get_footer(); ?>
   </body>
 </html>
