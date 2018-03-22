@@ -20,9 +20,9 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/humberger.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/column.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/back-to-top.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/moving-h2.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/move-service.js"></script>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>

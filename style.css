@@ -84,6 +84,7 @@ header {
 }
 
 body .page-header {
+  display: none;
   background-color: white;
   top: 0;
   right: 0px;
@@ -107,6 +108,7 @@ body .page-header {
 }
 
 .global-nav {
+  display: none;
   float: right;
   padding-top: 25px;
   font-size: 18px;
@@ -128,6 +130,10 @@ body .page-header {
 }
 .global-nav li:last-child {
   padding-right: 0;
+}
+
+.key-visual {
+  background-color: blue;
 }
 
 .motto {
@@ -197,6 +203,7 @@ column
   display: flex;
   flex-direction: wrap;
   justify-content: space-between;
+  position: relative;
 }
 
 .column-item-box1 {
@@ -212,6 +219,7 @@ column
   width: 30%;
   padding: 0.5%;
   background-color: white;
+  transition: 1s;
 }
 .column-item a {
   width: 100%;
@@ -222,6 +230,14 @@ column
 }
 .column-item img :hover {
   transform: scale(1.03);
+}
+
+.column-item-2nd {
+  transition-delay: .8s;
+}
+
+.column-item-3rd {
+  transition-delay: 1.6s;
 }
 
 /*----------------
