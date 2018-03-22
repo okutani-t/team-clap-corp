@@ -52,11 +52,9 @@
 		<!-- end .social-nav --></div>
 		<?php endif; ?>
 
-		<div class="copyright">
-			<div class="container">
-				<?php get_template_part( 'modules/copyright' ); ?>
-			<!-- end .container --></div>
-		<!-- end .copyright --></div>
+		<p class="copyright">
+		© 2018 teamclap
+		<!-- end .copyright --></p>
 		<?php do_action( 'habakiri_after_footer_content' ); ?>
 	<!-- end #footer --></footer>
 <!-- end #container --></div>
