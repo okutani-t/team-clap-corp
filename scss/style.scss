@@ -21,6 +21,15 @@ body .page-header{
   z-index: 99;
 }
 
+.inner{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.responsive-nav-contents{
+  box-shadow: none;
+}
+
 .logo{
   float:left;
   width: 300px;
@@ -169,6 +178,7 @@ body .page-header{
   .contact{
     background-color: #f2f1f1;;
     padding-bottom: 40px;
+    width: 100%;
     a{text-align: center;
     margin: 20px auto;
     display: block;

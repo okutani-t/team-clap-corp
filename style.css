@@ -84,11 +84,21 @@ header {
 }
 
 body .page-header {
+  display: none;
   background-color: white;
   top: 0;
   right: 0px;
   width: 100%;
   z-index: 99;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.responsive-nav-contents {
+  box-shadow: none;
 }
 
 .logo {
@@ -107,6 +117,7 @@ body .page-header {
 }
 
 .global-nav {
+  display: none;
   float: right;
   padding-top: 25px;
   font-size: 18px;
@@ -128,6 +139,10 @@ body .page-header {
 }
 .global-nav li:last-child {
   padding-right: 0;
+}
+
+.key-visual {
+  background-color: blue;
 }
 
 .motto {
@@ -230,6 +245,7 @@ contact
 .contact {
   background-color: #f2f1f1;
   padding-bottom: 40px;
+  width: 100%;
 }
 .contact a {
   text-align: center;

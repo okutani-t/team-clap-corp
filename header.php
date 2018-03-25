@@ -39,7 +39,6 @@
 	?>
 	<header id="header" class="header">
 		<?php do_action( 'habakiri_before_header_content' ); ?>
-		<div class="container">
 			<div class="row header__content">
 				<div class="col-xs-10 <?php echo esc_attr( $site_branding_size ); ?> header__col">
 					<!-- end .header__col --></div>
