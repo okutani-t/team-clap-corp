@@ -62,11 +62,6 @@ body .page-header{
       }
     }
   }
-
-  .key-visual{
-    background-color:blue;
-  }
-
   .motto{
     font-size:60px;
     color: black;
@@ -81,7 +76,9 @@ body .page-header{
   about
   ----------------*/
   .about{
-    background-color: #fbf9f9;
+   background-color: rgba(251, 249, 249, 0.7);
+   border-radius: 50px;
+
   }
   .about-desc{
     font-size: 16px;
@@ -93,7 +90,6 @@ body .page-header{
   service
   ----------------*/
   .service{
-    background-color: #f2f1f1;
     width: 100%;
     padding-bottom: 50px;
     .content{
