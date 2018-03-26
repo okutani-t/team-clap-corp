@@ -17,7 +17,8 @@
         <h2 class="motto">More Creative. More Clap.</h2>
         <p class="motto-desc">吉祥寺を拠点にしたWeb制作・システム開発のクリエイターチーム</p>
       </div>
-      <section class="about">
+     <div class="container">
+      <section class="about inner">
        <h2 class="h2-topic">ABOUT</h2>
           <p class="about-desc">
            テストテストテストてテストテスト
@@ -40,7 +41,7 @@
            <br>
          </p>
       </section>
-      <section class="service">
+      <section class="service inner">
         <h2 class="h2-topic">SERVICE</h2>
         <div class="content">
           <div class="service-item fadeIn">
@@ -65,7 +66,7 @@
           </div>
         </div>
       </section>
-      <section class="column">
+      <section class="column inner">
        <h2 class="h2-topic">COLUMN</h2>
           <div class="column-item-box1">
            <div class="column-item column-item-1st">
@@ -108,12 +109,12 @@
            </div>
        </div><!--column-item-box-->
       </section>
+     </div><!--container-->
       <section class="contact">
        <h2 class="h2-topic">CONTACT</h2>
        <p>HP作成やシステム開発などのお仕事のご依頼は、お気軽にご相談ください。</p>
        <a class="ToContactForm" href="#">お問い合わせ</a>
       </section>
-    </div><!--container-->
     <?php get_footer(); ?>
   </body>
 </html>
