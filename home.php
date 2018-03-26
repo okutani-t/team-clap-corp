@@ -68,19 +68,19 @@
       <section class="column">
        <h2 class="h2-topic">COLUMN</h2>
           <div class="column-item-box1">
-           <div class="column-item">
+           <div class="column-item column-item-1st">
              <a href="#">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
               <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-           <div class="column-item">
+           <div class="column-item column-item-2nd">
              <a href="#">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-           <div class="column-item">
+           <div class="column-item column-item-3rd">
              <a href="#">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
@@ -88,19 +88,19 @@
            </div>
          </div>
          <div class="column-item-box2">
-           <div class="column-item">
+           <div class="column-item column-item-1st">
              <a href="#">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-           <div class="column-item">
+           <div class="column-item column-item-2nd">
              <a href="#">
                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-           <div class="column-item">
+           <div class="column-item column-item-3rd">
              <a href="#">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
               <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
