@@ -1,20 +1,21 @@
 <?php get_header(); ?>
-     <header class="page-header">
-          <h1 class="logo">TEAM CLAP
-            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg">TEAM CLAP</a>
+     <header id="header">
+       <div class="top-header clearfix">
+          <h1 class="logo">
+            <a href="#">TEAM CLAP</a>
           </h1>
           <nav class="global-nav">
             <ul>
-              <li><a class="first-item" href="#">ABOUT</a></li>
-              <li><a href="#">SERVICE</a></li>
-              <li><a href="#">COLUMN</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a class="first-item" href="#about">ABOUT</a></li>
+              <li><a href="#service">SERVICE</a></li>
+              <li><a href="#column">COLUMN</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </nav>
         </div>
       </header>
       <div class="key-visual">
-        <h2 class="motto">More Creative. More Clap.</h2>
+        <p class="motto">More Creative. More Clap.</p>
         <p class="motto-desc">吉祥寺を拠点にしたWeb制作・システム開発のクリエイターチーム</p>
       </div>
      <div class="container">
