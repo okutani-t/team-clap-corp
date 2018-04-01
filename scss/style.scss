@@ -12,6 +12,7 @@ header{
 }
 
 body .top-header{
+  display: none;
   background-color: white;
   position: fixed;
   top:0;
@@ -46,7 +47,6 @@ body .top-header{
 }
 
 .global-nav{
-  // display: none;
   float: right;
   padding-top: 30px;
   font-size: 18px;

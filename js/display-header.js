@@ -1,5 +1,4 @@
 $(function(){
-  $('.top-header').hide();
  $(window).scroll(function(){
      var POS = $('.about').offset().top;
      var scroll = $(window).scrollTop();
