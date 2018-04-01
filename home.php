@@ -1,9 +1,10 @@
 <?php get_header(); ?>
      <header id="header">
        <div class="top-header clearfix">
-          <h1 class="logo">
-            <a href="#">TEAM CLAP</a>
-          </h1>
+         <a href="#">
+          <h1 class="h1-logo"><span class="h1-logo">TEAM CLAP</span></h1>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg" alt="teamclap">
+         </a>
           <nav class="global-nav">
             <ul>
               <li><a class="first-item" href="#about">ABOUT</a></li>
