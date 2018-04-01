@@ -2,7 +2,7 @@
      <header id="header">
        <div class="top-header clearfix">
          <a href="#">
-          <h1 class="h1-logo"><span class="h1-logo">TEAM CLAP</span></h1>
+          <h1 class="logo"><span class="h1-logo">TEAM CLAP</span></h1>
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg" alt="teamclap">
          </a>
           <nav class="global-nav">
