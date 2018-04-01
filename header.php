@@ -23,6 +23,7 @@
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/column.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/back-to-top.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/move-service.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/display-header.js"></script>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>

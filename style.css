@@ -47,7 +47,7 @@ h3, h3 {
   padding-top: 10px;
 }
 
-a, a:visited {
+a, a:hover, a:visited {
   text-decoration: none;
   color: #222222;
 }
@@ -83,9 +83,10 @@ header {
   margin: 0 10px;
 }
 
-body .page-header {
+body .top-header {
   display: none;
   background-color: white;
+  position: fixed;
   top: 0;
   right: 0px;
   width: 100%;
@@ -105,10 +106,10 @@ body .page-header {
   float: left;
   width: 300px;
   height: 80px;
-  background: url("../image/logo.png") no-repeat;
-  overflow: hidden;
+  background: url(".../images/logo.png") no-repeat;
   text-indent: 100%;
   white-space: nowrap;
+  overflow: hidden;
 }
 .logo a {
   display: block;
@@ -117,10 +118,10 @@ body .page-header {
 }
 
 .global-nav {
-  display: none;
   float: right;
-  padding-top: 25px;
+  padding-top: 30px;
   font-size: 18px;
+  margin-right: 20px;
 }
 .global-nav li {
   display: inline-block;
@@ -128,12 +129,13 @@ body .page-header {
 }
 .global-nav li a {
   display: inline-block;
-  height: 50px;
-  line-height: 50px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   text-align: center;
   margin: 0 5px;
+  color: black;
 }
-.global-nav li a :hover {
+.global-nav li a:hover {
   border-bottom: 4px solid #ffc600;
   transition-duration: .5s;
 }
@@ -144,11 +146,19 @@ body .page-header {
 .motto {
   font-size: 60px;
   color: black;
-  padding-bottom: 50px;
+  padding-top: 200px;
+  margin: 0;
 }
 
 .motto-desc {
   font-size: 24px;
+  padding-top: 150px;
+  margin: 0;
+}
+
+.key-visual {
+  height: 100vh;
+  width: 100%;
 }
 
 /*----------------
@@ -408,13 +418,14 @@ responsive
   }
 
   .motto {
-    font-size: 68px;
+    font-size: 60px;
     line-height: 1.2;
-    padding-top: 200px;
+    padding-top: 100px;
   }
 
   .motto-desc {
     line-height: 1.5;
+    padding-top: 60px;
     padding-bottom: 20px;
   }
 
