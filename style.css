@@ -303,12 +303,11 @@ body .footer {
   background-color: #e5e1e1;
   max-width: 100%;
   margin: 0 auto;
-  padding: 60px 30px 20px 30px;
+  padding: 30px 30px 20px 30px;
 }
 
 .footer-nav {
   float: left;
-  padding-left: 25px;
 }
 .footer-nav li {
   display: inline-block;
@@ -354,7 +353,7 @@ body .footer .copyright {
   font-size: 12px;
   margin: 0 auto;
   color: black;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 /*----------------
@@ -456,6 +455,10 @@ responsive
   /*----------------
   service
   ---------------*/
+  #footer nav ul {
+    padding-left: 0;
+  }
+
   .footer-nav, .footer-sns {
     float: none;
     text-align: center;
@@ -472,6 +475,10 @@ responsive
 
   .footer-sns li a:nth-child(1) {
     padding-left: 20px;
+  }
+
+  body .footer .copyright {
+    padding-top: 30px;
   }
 }
 
