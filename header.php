@@ -31,25 +31,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php do_action( 'habakiri_before_container' ); ?>
-	<div id="container" class="container">
-	<?php
-	$header_classes     = Habakiri::get_header_classses();
-	$site_branding_size = Habakiri::get_site_branding_size();
-	$gnav_size          = Habakiri::get_gnav_size();
-	?>
 	<header id="header" class="header">
-		<?php do_action( 'habakiri_before_header_content' ); ?>
-			<div class="row header__content">
-				<div class="col-xs-10 <?php echo esc_attr( $site_branding_size ); ?> header__col">
-					<!-- end .header__col --></div>
-				<div class="col-xs-2 <?php echo esc_attr( $gnav_size ); ?> header__col global-nav-wrapper clearfix">
-					<?php get_template_part( 'modules/gnav' ); ?>
-					<div id="responsive-btn"></div>
-				<!-- end .header__col --></div>
-			<!-- end .row --></div>
-		<!-- end .container --></div>
-		<?php do_action( 'habakiri_after_header_content' ); ?>
 	<!-- end #header --></header>
 	<div id="contents">
 		<?php do_action( 'habakiri_before_contents_content' ); ?>
