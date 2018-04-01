@@ -6,33 +6,46 @@ window.onload = function() {
 
   canvas.width = windowWidth;
   canvas.height = windowHeight;
-  //canvas.width = $(window).width() + 'px';
-  //canvas.height = $(window).height() + 'px';
 
   //ランダムで数字を出す
   var randRange = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
 
+  var duration = 0;
+  var interval = 250;
 
   // ステージを関連付ける
-  var stage = new createjs.Stage( canvas );
+  var stage = new createjs.Stage(canvas);
+  var tick = function(eventObject) {
+    var delta = eventObject.delta;
+    addBall(delta);
+    stage.update();
+  }
 
-  // 赤い丸を描画
-  var circle = new createjs.Shape();
-  circle.graphics.beginFill("#ffc600");
-  circle.graphics.drawCircle(0, 0, 50);
-  circle.graphics.endFill();
-  circle.x = randRange(0, windowWidth);
-  circle.y = randRange(0, windowHeight);
-  stage.addChild(circle);
+  var addBall = function(delta) {
+    duration += delta;
+    if (duration > interval) {
+      var circle = new createjs.Shape();
+      circle.graphics.beginFill("#ffc600");
+      circle.graphics.drawCircle(0, 0, 50);
+      circle.graphics.endFill();
+      circle.x = randRange(0, windowWidth);
+      circle.y = randRange(0, windowHeight);
+      stage.addChild(circle);
+      // フェードイン
+      circle.alpha = 0;
+      createjs.Tween.get(circle).to({alpha:1}, 1000);
 
-  // フェードイン
-  circle.alpha = 0;
-  createjs.Tween.get(circle).to({alpha:1}, 1000);
+      duration = 0;
 
-  // フレームレート30で、ステージを更新
+      setTimeout(function() {
+        stage.removeChild(circle);
+      }, 10000);
+
+    }
+  }
+
   createjs.Ticker.setFPS(30);
-  createjs.Ticker.addEventListener("tick", stage);
-  stage.update();
+  createjs.Ticker.addEventListener("tick", tick);
 };
