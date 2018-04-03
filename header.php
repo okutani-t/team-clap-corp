@@ -19,11 +19,14 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/column.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/back-to-top.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/move-service.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/display-header.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bg-ball.js"></script>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
@@ -31,6 +34,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+	<canvas id="bg_ball" width="" height=""></canvas>
 	<header id="header" class="header">
 	<!-- end #header --></header>
 	<div id="contents">

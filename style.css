@@ -79,6 +79,13 @@ ul li {
   background-color: #ffc600;
 }
 
+#bg_ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 header {
   margin: 0 10px;
 }
