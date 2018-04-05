@@ -9,7 +9,7 @@ $(document).ready(function(){
       }
     });
   });
-  $(this).click(function(){
+  $('#backTop').click(function(){
   $('body,html').animate({
   scrollTop: 0},500);
   return false;

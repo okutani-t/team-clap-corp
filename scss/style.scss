@@ -322,7 +322,12 @@ body .top-header{
     /*----------------
     global-nav
     -------------------*/
-
+    .h1-img {
+      padding:{
+        left: 10px;
+        top: 10px;
+      }
+    }
     .logo{
       float: none;
       text-align: center;
@@ -335,7 +340,8 @@ body .top-header{
     padding-top: 5px;
     font-size: 15px;
      ul{
-       padding-left: 0px;
+       padding-left: 0;
+       margin-bottom: 0;
      }
         li{
         width:24%;
@@ -349,11 +355,6 @@ body .top-header{
   /*----------------
   header
   ---------------*/
-
-  .header{
-    padding-bottom: 40px;
-  }
-
   .motto{
     font-size: 60px;
     line-height: 1.2;
