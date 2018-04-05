@@ -388,6 +388,11 @@ responsive
   /*----------------
   global-nav
   -------------------*/
+  .h1-img {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
   .logo {
     float: none;
     text-align: center;
@@ -401,7 +406,8 @@ responsive
     font-size: 15px;
   }
   .global-nav ul {
-    padding-left: 0px;
+    padding-left: 0;
+    margin-bottom: 0;
   }
   .global-nav li {
     width: 24%;
@@ -414,10 +420,6 @@ responsive
   /*----------------
   header
   ---------------*/
-  .header {
-    padding-bottom: 40px;
-  }
-
   .motto {
     font-size: 60px;
     line-height: 1.2;
