@@ -70,8 +70,8 @@
       </section>
       <section class="column inner">
        <h2 class="h2-topic">COLUMN</h2>
-          <div class="column-item-box1">
-           <div class="column-item column-item-1st">
+          <div class="column-item-box">
+           <div class="column-item">
              <a href="#">
               <div class="column-img-box">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
@@ -79,7 +79,7 @@
               <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-           <div class="column-item column-item-2nd">
+           <div id="popup" class="column-item">
              <a href="#">
                <div class="column-img-box">
                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
@@ -87,7 +87,7 @@
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-           <div class="column-item column-item-3rd">
+           <div class="column-item">
              <a href="#">
                <div class="column-img-box">
                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
@@ -95,9 +95,7 @@
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-         </div>
-         <div class="column-item-box2">
-           <div class="column-item column-item-1st">
+           <div id="popup" class="column-item">
              <a href="#">
                <div class="column-img-box">
                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
@@ -105,7 +103,7 @@
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-           <div class="column-item column-item-2nd">
+           <div class="column-item">
              <a href="#">
                <div class="column-img-box">
                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
@@ -113,7 +111,7 @@
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-           <div class="column-item column-item-3rd">
+           <div id="popup" class="column-item">
              <a href="#">
                <div class="column-img-box">
                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
@@ -121,7 +119,7 @@
                <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
              </a>
            </div>
-       </div><!--column-item-box-->
+          </div>
       </section>
      </div><!--container-->
       <section class="contact">
