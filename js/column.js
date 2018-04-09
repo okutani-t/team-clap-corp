@@ -1,4 +1,11 @@
 $(function(){
+  var window_width = $(window).width();
+if( window_width > 768 ) {
+  $('#popup').addClass('pc-popup-delay');
+} else {
+  $('#popup').removeClass('pc-popup-delay');
+};
+
  $(window).scroll(function(){
    $('.column-item').each(function(){
      var POS = $(this).offset().top;
