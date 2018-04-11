@@ -35,6 +35,8 @@ p, ul, ol, dl, table {
 
 h2, .h2 {
   position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
   font-size: 48px;
   padding: 100px 0;
   font-family: 'ヒラギノ角ゴStdN';
@@ -466,6 +468,7 @@ responsive
   }
   .footer-nav li a {
     margin: 0 10px;
+    color: #222;
   }
 
   .footer-sns li a:nth-child(1) {
