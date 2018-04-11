@@ -20,7 +20,7 @@
         <p class="motto-desc">吉祥寺を拠点にしたWeb制作・システム開発のクリエイターチーム</p>
       </div>
      <div class="container">
-      <section class="about inner">
+      <section id="about" class="about inner">
        <h2 class="h2-topic">ABOUT</h2>
           <p class="about-desc">
            テストテストテストてテストテスト
@@ -43,7 +43,7 @@
            <br>
          </p>
       </section>
-      <section class="service inner">
+      <section id="service" class="service inner">
         <h2 class="h2-topic">SERVICE</h2>
         <div class="content">
           <div class="service-item fadeIn">
@@ -68,7 +68,7 @@
           </div>
         </div>
       </section>
-      <section class="column inner">
+      <section id="column" class="column inner">
        <h2 class="h2-topic">COLUMN</h2>
           <div class="column-item-box">
            <div class="column-item">
@@ -122,7 +122,7 @@
           </div>
       </section>
      </div><!--container-->
-      <section class="contact">
+      <section id="contact" class="contact">
        <h2 class="h2-topic">CONTACT</h2>
        <p>HP作成やシステム開発などのお仕事のご依頼は、お気軽にご相談ください。</p>
        <a class="ToContactForm" href="#">お問い合わせ</a>
