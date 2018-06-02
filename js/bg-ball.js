@@ -12,9 +12,6 @@ window.onload = function() {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
 
-  var duration = 0;
-  var interval = 250;
-
   // ステージを関連付ける
   var stage = new createjs.Stage(canvas);
   var tick = function(eventObject) {
@@ -23,25 +20,34 @@ window.onload = function() {
     stage.update();
   }
 
+  var duration = 0;
+  var interval = 250;
+
   var addBall = function(delta) {
     duration += delta;
     if (duration > interval) {
       var circle = new createjs.Shape();
       circle.graphics.beginFill("#ffc600");
-      circle.graphics.drawCircle(0, 0, 50);
+      var ballSize = randRange(35, 75);
+      circle.graphics.drawCircle(0, 0, ballSize);
       circle.graphics.endFill();
       circle.x = randRange(0, windowWidth);
       circle.y = randRange(0, windowHeight);
       stage.addChild(circle);
       // フェードイン
       circle.alpha = 0;
-      createjs.Tween.get(circle).to({alpha:1}, 1000);
+      createjs.Tween.get(circle).to({alpha:1}, 1500);
 
       duration = 0;
 
+      // フェードアウト
+      setTimeout(function() {
+        createjs.Tween.get(circle).to({alpha:0}, 1500);
+      }, 12000);
+
       setTimeout(function() {
         stage.removeChild(circle);
-      }, 10000);
+      }, 14000);
 
     }
   }
