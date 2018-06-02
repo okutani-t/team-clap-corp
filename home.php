@@ -81,7 +81,7 @@
 <section id="contact" class="contact">
   <h2 class="h2-topic">CONTACT</h2>
   <p>HP作成やシステム開発などのお仕事のご依頼は、お気軽にご相談ください。</p>
-  <a class="ToContactForm" href="#">お問い合わせ</a>
+  <a class="ToContactForm" href="/contact">お問い合わせ</a>
 </section>
 <?php get_footer(); ?>
   </body>
