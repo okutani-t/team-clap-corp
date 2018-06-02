@@ -15,7 +15,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
@@ -26,8 +25,10 @@
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/column.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/back-to-top.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/move-service.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/display-header.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bg-ball.js"></script>
+    <?php if (is_home() || is_front_page()) : ?>
+      <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/display-header.js"></script>
+      <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bg-ball.js"></script>
+    <?php endif; ?>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<!--[if lt IE 9]>
 	  <script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>

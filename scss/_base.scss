@@ -1,7 +1,6 @@
-html{
+html {
   font-size: 62.5%;
   width: 100%;
-  text-align:center;
 }
 
 body {
@@ -10,7 +9,6 @@ body {
   line-height: 1.8;
   font-weight: 500;
   width: 100%;
-  background: url(../image/ball-demo.jpg);
   background-attachment: fixed;
 }
 
@@ -28,50 +26,37 @@ p, ul, ol, dl, table {
   margin-bottom: 20px;
 }
 
-h2, .h2 {
-  position:relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 48px;
-  padding: 100px 0;
-  font-family:'ヒラギノ角ゴStdN';
-  color: #b8b4b4;
-}
-
-h3, h3 {
-  font-size: 18px;
-  font-family:'ヒラギノ角ゴProN';
-  padding-top: 10px;
-}
-
 a, a:hover, a:visited{
   text-decoration: none;
   color: #222222;
 }
 
-ul li{
+ul li {
   text-decoration: none;
 }
 
-.inner{
+.inner {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.container{
-  text-align: center;
-}
-
-.h2-topic{
+.h2-topic {
+  position:relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 48px;
+  padding: 100px 0;
+  font-family: 'ヒラギノ角ゴStdN';
+  color: #b8b4b4;
   transition: .5s;
-   &::after{
-         position: absolute;
-         content:'';
-         height: 8px;
-         width: 150px;
-         bottom: 33%;
-         right: 42%;
-         border-radius: 4px;
-         background-color: #ffc600;
-       }
-     }
+  &:after {
+    position: absolute;
+    content:'';
+    height: 8px;
+    width: 150px;
+    bottom: 33%;
+    right: 42%;
+    border-radius: 4px;
+    background-color: #ffc600;
+  }
+}

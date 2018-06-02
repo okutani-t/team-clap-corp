@@ -8,106 +8,76 @@
 <div class="container">
   <section id="about" class="about inner">
     <h2 class="h2-topic">ABOUT</h2>
-    <p class="about-desc">
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      <br>
-      <br>
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      <br>
-      <br>
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      テストテストテストてテストテスト
-      <br>
-      <br>
-    </p>
+    <div class="about-desc">
+      <p>
+        クリエイティブな活動から世の中にもっと拍手を。
+      </p>
+      <p>
+        その想いから合同会社TEAM CLAPを立ち上げました。
+      </p>
+      <p>
+        チームメンバー同士の拍手。クライアントからの拍手。
+      </p>
+      <p>
+        テクノロジーを通じて、明るい未来を創造していきます。
+      </p>
+    </div>
   </section>
+
   <section id="service" class="service inner">
     <h2 class="h2-topic">SERVICE</h2>
     <div class="content">
       <div class="service-item fadeIn">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="">
-        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
+        <h2>
+          Webサイト制作
+        </h2>
+        <p>
+          HTML5, CSS3, JavaScript, WordPressなどを用いたWeb制作を致します。
         </p>
       </div>
       <div class="service-item fadeIn">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="">
-        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
+        <h2>
+          システム開発
+        </h2>
+        <p>
+          Ruby（Ruby on Rails）やPHP（Laravel）などを用いたシステム開発業務を行います。
         </p>
       </div>
       <div class="service-item fadeIn2">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="">
-        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
-        </p>
-      </div>
-      <div class="service-item fadeIn2">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="">
-        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステストテストテストテスト
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="セミナー・ITコンサル">
+        <h2>
+          セミナー・ITコンサル
+        </h2>
+        <p>
+          企業・個人向けのITコンサル業務を行います。</p>
+        <p>
+          HTMLやCSS, Gitを利用したサイト制作から、カンバンなどの業務効率を向上させるツールの使い方までご相談に乗ります。
         </p>
       </div>
     </div>
   </section>
+
   <section id="column" class="column inner">
     <h2 class="h2-topic">COLUMN</h2>
     <div class="column-item-box">
-      <div class="column-item">
-        <a href="#">
-          <div class="column-img-box">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
+      <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+          <div class="column-item">
+            <a href="<?php the_permalink(); ?>">
+              <div class="column-img-box">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="記事サムネイル">
+              </div>
+              <h3><?php the_title(); ?></h3>
+            </a>
           </div>
-          <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
-        </a>
-      </div>
-      <div id="popup" class="column-item">
-        <a href="#">
-          <div class="column-img-box">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
-          </div>
-          <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
-        </a>
-      </div>
-      <div class="column-item">
-        <a href="#">
-          <div class="column-img-box">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
-          </div>
-          <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
-        </a>
-      </div>
-      <div id="popup" class="column-item">
-        <a href="#">
-          <div class="column-img-box">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
-          </div>
-          <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
-        </a>
-      </div>
-      <div class="column-item">
-        <a href="#">
-          <div class="column-img-box">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
-          </div>
-          <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
-        </a>
-      </div>
-      <div id="popup" class="column-item">
-        <a href="#">
-          <div class="column-img-box">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="">
-          </div>
-          <h3>テストテストテストテストテストテストテストテストテストテストテストテスト</h3>
-        </a>
-      </div>
+        <?php endwhile; ?>
+      <?php endif; ?>
     </div>
   </section>
 </div><!--container-->
+
 <section id="contact" class="contact">
   <h2 class="h2-topic">CONTACT</h2>
   <p>HP作成やシステム開発などのお仕事のご依頼は、お気軽にご相談ください。</p>
