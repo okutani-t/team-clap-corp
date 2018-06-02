@@ -15,7 +15,7 @@
   <nav class="footer-nav">
 	<ul>
 	  <li><a href="#">会社概要</a></li>
-	  <li><a href="#">お問い合わせ</a></li>
+	  <li><a href="/contact">お問い合わせ</a></li>
 	  <li><a href="#">コラム</a></li>
 	</ul>
   </nav>

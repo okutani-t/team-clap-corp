@@ -6,6 +6,8 @@
 @import 'mixin';
 @import 'variables';
 @import 'base';
+@import 'article';
+@import 'contact';
 
 #bg_ball {
   position: fixed;
@@ -281,6 +283,7 @@ footer#footer {
         text-align: center;
         margin: 0 15px;
         font-size: 14px;
+        color: #337ab7;
         &:hover {
           border-bottom: 4px solid #ffc600;
           transition-duration: .5s;
@@ -289,7 +292,7 @@ footer#footer {
     }
   }
   .footer-sns {
-    float:right;
+    float: right;
     li {
       display: inline-block;
       padding-right: 20px;
@@ -299,6 +302,7 @@ footer#footer {
       width: 50px;
       height: 50px;
       line-height: 50px;
+      color: #337ab7;
     }
     .sns-icon {
       height: 50px;
@@ -333,13 +337,6 @@ footer#footer {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, .5);
   text-align: center;
-}
-
-/*----------------
-   sub page
-   ----------------*/
-.sub-page-contents {
-  padding-top: 140px;
 }
 
 /*----------------

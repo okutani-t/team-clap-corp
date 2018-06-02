@@ -36,7 +36,9 @@
 	<?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-	<canvas id="bg_ball" width="" height=""></canvas>
+    <?php if (is_home() || is_front_page()) : ?>
+      <canvas id="bg_ball" width="" height=""></canvas>
+    <?php endif; ?>
     <header id="header">
       <a href="<?php echo home_url() ?>" class="logo">
         <h1 class="h1-logo">TEAM CLAP</h1>
