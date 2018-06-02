@@ -88,18 +88,56 @@ ul li {
   z-index: -1;
 }
 
-header {
-  margin: 0 10px;
-}
-
-body .top-header {
-  display: none;
-  background-color: white;
+header#header {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
-  right: 0px;
+  left: 0;
   width: 100%;
+  height: 110px;
   z-index: 99;
+  padding: 0 20px;
+  transition: height .8s;
+}
+header#header.active {
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+header#header .logo {
+  display: flex;
+  align-items: center;
+}
+header#header .logo .h1-logo {
+  display: none;
+}
+header#header .logo .h1-img {
+  width: 230px;
+  padding-bottom: 5px;
+}
+header#header .global-nav {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+header#header .global-nav li {
+  display: inline-block;
+  padding-right: 15px;
+}
+header#header .global-nav li a {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 0 5px;
+  color: black;
+}
+header#header .global-nav li a:hover {
+  border-bottom: 4px solid #ffc600;
+}
+header#header .global-nav li:last-child {
+  padding-right: 0;
 }
 
 .inner {
@@ -111,63 +149,30 @@ body .top-header {
   box-shadow: none;
 }
 
-.logo {
-  display: none;
-}
-
-.h1-img {
-  float: left;
-  padding-left: 30px;
-  padding-top: 20px;
-}
-
-.global-nav {
-  float: right;
-  padding-top: 30px;
-  font-size: 18px;
-  margin-right: 20px;
-}
-.global-nav li {
-  display: inline-block;
-  padding-right: 15px;
-}
-.global-nav li a {
-  display: inline-block;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  text-align: center;
-  margin: 0 5px;
-  color: black;
-}
-.global-nav li a:hover {
-  border-bottom: 4px solid #ffc600;
-  transition-duration: .5s;
-}
-.global-nav li:last-child {
-  padding-right: 0;
-}
-
-.motto {
-  font-size: 60px;
-  color: black;
-  padding-top: 200px;
-  margin: 0;
-}
-
-.motto-desc {
-  font-size: 24px;
-  padding-top: 150px;
-  margin: 0;
-}
-
 .key-visual {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.key-visual .key-visual-inner {
+  padding-bottom: 20px;
+}
+.key-visual .key-visual-inner .motto {
+  font-family: 'Signika', sans-serif;
+  font-size: 6.4rem;
+  color: black;
+  margin: 0 0 20px;
+}
+.key-visual .key-visual-inner .motto-desc {
+  font-size: 20px;
+  margin: 0;
 }
 
 /*----------------
-about
-----------------*/
+   about
+   ----------------*/
 .about {
   background-color: rgba(251, 249, 249, 0.7);
   border-radius: 50px;
@@ -180,8 +185,8 @@ about
 }
 
 /*----------------
-service
-----------------*/
+   service
+   ----------------*/
 .service {
   width: 100%;
   padding-bottom: 50px;
@@ -215,8 +220,8 @@ service
 }
 
 /*----------------
-column
-----------------*/
+   column
+   ----------------*/
 .column-item-box {
   -webkit-display: flex;
   display: flex;
@@ -254,8 +259,8 @@ column
 }
 
 /*----------------
-contact
-----------------*/
+   contact
+   ----------------*/
 .contact {
   background-color: #f2f1f1;
   padding-bottom: 40px;
@@ -291,8 +296,8 @@ contact
 }
 
 /*----------------
-footer
-----------------*/
+   footer
+   ----------------*/
 body .footer {
   background-color: #e5e1e1;
   max-width: 100%;
@@ -351,8 +356,8 @@ body .footer .copyright {
 }
 
 /*----------------
-backTop
-----------------*/
+   backTop
+   ----------------*/
 #backTop {
   position: fixed;
   bottom: 5%;
@@ -367,19 +372,19 @@ backTop
 }
 
 /*----------------
-responsive
-----------------*/
+   responsive
+   ----------------*/
 @media screen and (max-width: 767px) {
   /*---------------
-  common
-  -----------------*/
+     common
+     -----------------*/
   .h2-topic::after {
     display: none;
   }
 
   /*----------------
-  global-nav
-  -------------------*/
+     global-nav
+     -------------------*/
   .h1-img {
     float: none;
     padding-left: 10px;
@@ -411,8 +416,8 @@ responsive
   }
 
   /*----------------
-  header
-  ---------------*/
+     header
+     ---------------*/
   .motto {
     font-size: 60px;
     line-height: 1.2;
@@ -426,8 +431,8 @@ responsive
   }
 
   /*----------------
-  about
-  ---------------*/
+     about
+     ---------------*/
   .about-desc {
     font-size: 20px;
     line-height: 24px;
@@ -435,8 +440,8 @@ responsive
   }
 
   /*----------------
-  service
-  ---------------*/
+     service
+     ---------------*/
   .service-item {
     width: 100%;
   }
@@ -450,8 +455,8 @@ responsive
   }
 
   /*----------------
-  footer
-  ---------------*/
+     footer
+     ---------------*/
   #footer nav ul {
     padding-left: 0;
   }
