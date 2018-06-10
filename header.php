@@ -45,10 +45,16 @@
         <img class="h1-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg" alt="teamclap">
       </a>
       <ul class="global-nav">
+        <?php if (is_home() || is_front_page()) : ?>
         <li><a class="first-item" href="#about">ABOUT</a></li>
         <li><a href="#service">SERVICE</a></li>
         <li><a href="#column">COLUMN</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <?php else : ?>
+        <li><a class="first-item" href="/">TOP</a></li>
+        <li><a href="/profile">会社概要</a></li>
+        <li><a href="/contact">お問い合わせ</a></li>
+        <?php endif; ?>
       </ul>
     </header>
 	<div id="contents">

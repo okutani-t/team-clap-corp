@@ -11,21 +11,23 @@
 ?>
 <?php do_action( 'habakiri_after_contents_content' ); ?>
 <!-- end #contents --></div>
-<footer id="footer" class="footer clearfix">
-  <nav class="footer-nav">
-	<ul>
-	  <li><a href="#">会社概要</a></li>
-	  <li><a href="/contact">お問い合わせ</a></li>
-	  <li><a href="#">コラム</a></li>
-	</ul>
-  </nav>
-  <nav class="footer-sns">
-	<ul>
-	  <li><a href="#" target="_blank"><i class="sns-icon fab fa-twitter"></i></a></li>
-	  <!-- <li><a href="#"><i class="sns-icon fab fa-facebook-f"></i></a></li> -->
-	  <!-- <li><a href="#"><i class="sns-icon fab fa-instagram"></i></a></li> -->
-	</ul>
-  </nav>
+<footer id="footer" class="footer">
+  <div class="footer-inner">
+    <nav class="footer-nav">
+	  <ul>
+        <li><a href="/">TOP</a></li>
+	    <li><a href="/profile">会社概要</a></li>
+	    <li><a href="/contact">お問い合わせ</a></li>
+	  </ul>
+    </nav>
+    <nav class="footer-sns">
+	  <ul>
+	    <li><a href="https://twitter.com/teamclap_pr" target="_blank"><i class="sns-icon fab fa-twitter"></i></a></li>
+	    <!-- <li><a href="#"><i class="sns-icon fab fa-facebook-f"></i></a></li> -->
+	    <!-- <li><a href="#"><i class="sns-icon fab fa-instagram"></i></a></li> -->
+	  </ul>
+    </nav>
+  </div>
   <?php do_action( 'habakiri_before_footer_content' ); ?>
 
   <?php if ( is_active_sidebar( 'footer-widget-area' ) ) : ?>

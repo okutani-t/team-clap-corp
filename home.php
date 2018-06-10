@@ -45,7 +45,7 @@
           Ruby（Ruby on Rails）やPHP（Laravel）などを用いたシステム開発業務を行います。
         </p>
       </div>
-      <div class="service-item fadeIn2">
+      <div class="service-item fadeIn">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="セミナー・ITコンサル">
         <h2>
           セミナー・ITコンサル
