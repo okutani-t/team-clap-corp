@@ -4,9 +4,9 @@ $(function(){
      var scroll = $(window).scrollTop();
      var windowHeight = $(window).height();
      if(scroll > POS - windowHeight + windowHeight/2){
-       $('.top-header').fadeIn();
-     }else{
-       $('.top-header').fadeOut();
+         $('#header').addClass('active');
+     } else {
+         $('#header').removeClass('active');
      }
    });
  });
