@@ -22,7 +22,7 @@
     </nav>
     <nav class="footer-sns">
 	  <ul>
-	    <li><a href="https://twitter.com/teamclap_pr" target="_blank"><i class="sns-icon fab fa-twitter"></i></a></li>
+	    <!-- <li><a href="https://twitter.com/teamclap_pr" target="_blank"><i class="sns-icon fab fa-twitter"></i></a></li> -->
 	    <!-- <li><a href="#"><i class="sns-icon fab fa-facebook-f"></i></a></li> -->
 	    <!-- <li><a href="#"><i class="sns-icon fab fa-instagram"></i></a></li> -->
 	  </ul>

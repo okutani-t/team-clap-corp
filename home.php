@@ -28,7 +28,7 @@
     <h2 class="h2-topic">SERVICE</h2>
     <div class="content">
       <div class="service-item fadeIn">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site.png" alt="Webサイト制作アイコン">
         <h2>
           Webサイト制作
         </h2>
@@ -37,7 +37,7 @@
         </p>
       </div>
       <div class="service-item fadeIn">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/system.png" alt="システム開発アイコン">
         <h2>
           システム開発
         </h2>
@@ -46,7 +46,7 @@
         </p>
       </div>
       <div class="service-item fadeIn">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service-image.jpg" alt="セミナー・ITコンサル">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/idea.png" alt="セミナー・ITコンサルアイコン">
         <h2>
           セミナー・ITコンサル
         </h2>
@@ -67,7 +67,7 @@
           <div class="column-item">
             <a href="<?php the_permalink(); ?>">
               <div class="column-img-box">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/column-img.jpg" alt="記事サムネイル">
+                <?php the_post_thumbnail(); ?>
               </div>
               <h3><?php the_title(); ?></h3>
             </a>
