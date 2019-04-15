@@ -269,45 +269,66 @@ section h2 {
 }
 
 /*----------------
-   service
+   service,member
    ----------------*/
-.service {
+.service,
+.member {
   width: 100%;
   padding-bottom: 50px;
 }
-.service .content {
+.service .content,
+.member .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-right: 50px;
   padding-left: 50px;
 }
-.service .content .service-item {
+.service .content .service-item,
+.service .content .member-item,
+.member .content .service-item,
+.member .content .member-item {
   position: relative;
   width: 25%;
   transition: 1.0s;
 }
 @media screen and (max-width: 767px) {
-  .service .content .service-item {
+  .service .content .service-item,
+  .service .content .member-item,
+  .member .content .service-item,
+  .member .content .member-item {
     width: 100%;
   }
 }
-.service .content .service-item h2 {
+.service .content .service-item h2,
+.service .content .member-item h2,
+.member .content .service-item h2,
+.member .content .member-item h2 {
   font-size: 16px;
   color: #333;
   margin: 0 0 20px;
 }
-.service .content .service-item img {
+.service .content .service-item img,
+.service .content .member-item img,
+.member .content .service-item img,
+.member .content .member-item img {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
   box-shadow: 0 0 8px #fff;
 }
-.service .content .service-item p {
+.service .content .service-item p,
+.service .content .member-item p,
+.member .content .service-item p,
+.member .content .member-item p {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1.5px;
   margin-bottom: 15px;
+}
+.service .content .member-item,
+.member .content .member-item {
+  width: 30%;
 }
 
 /*----------------

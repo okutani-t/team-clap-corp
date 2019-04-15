@@ -152,9 +152,10 @@ section {
 }
 
 /*----------------
-   service
+   service,member
    ----------------*/
-.service {
+.service,
+.member {
   width: 100%;
   padding-bottom: 50px;
   .content {
@@ -165,7 +166,8 @@ section {
       right: 50px;
       left: 50px;
     }
-    .service-item {
+    .service-item,
+    .member-item {
       position: relative;
       width: 25%;
       transition: 1.0s;
@@ -189,6 +191,9 @@ section {
         letter-spacing: 1.5px;
         margin-bottom: 15px;
       }
+    }
+    .member-item {
+      width: 30%;
     }
   }
 }

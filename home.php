@@ -59,25 +59,24 @@
       </div>
     </section>
 
-    <section>
+    <section id="member" class="member inner">
       <h2 class="h2-topic">MEMBER</h2>
       <div class="content">
-        <div class="service-item fadeIn">
-          <img src="" alt="okutani">
+        <div class="member-item fadeIn">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/okutani.png" alt="okutani">
           <h2>okutani</h2>
           <p>
-            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
-            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
-            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
+            TEAM CLAP CEO。
+            1990年生まれ。法政大学大学院を卒業後、新卒で入った会社を8ヶ月で辞めフリーランスの道へ。2018年6月にTEAM CLAPを立ち上げる。HTML・CSSを利用したWebサイト制作、Ruby on Rails, Laravelなどを利用したシステム開発を得意としている。趣味は吉祥寺巡り。
+
           </p>
         </div>
-        <div class="service-item fadeIn">
-          <img src="" alt="kimura">
+        <div class="member-item fadeIn">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kimura.jpg" alt="kimura">
           <h2>kimura</h2>
           <p>
-            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
-            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
-            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
+            TEAM CLAP Webエンジニア。
+            1991年生まれ。北海道大学大学大学院卒業後、新卒で全国490教室規模の展開をする某個別指導塾に勤め、8教室の責任者として運営を行う。その後新規顧客対応チームのリーダーとして、メンバー育成を務める。2019年月3月に退職し、TEAM CLAPへ。北海道が大好きすぎる。
           </p>
         </div>
 
