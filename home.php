@@ -52,37 +52,62 @@
         </h2>
         <p>
           企業・個人向けのITコンサル業務を行います。</p>
-        <p>
-          HTMLやCSS, Gitを利用したサイト制作から、カンバンなどの業務効率を向上させるツールの使い方までご相談に乗ります。
-        </p>
+          <p>
+            HTMLやCSS, Gitを利用したサイト制作から、カンバンなどの業務効率を向上させるツールの使い方までご相談に乗ります。
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="column" class="column inner">
-    <h2 class="h2-topic">COLUMN</h2>
-    <div class="column-item-box">
-      <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
-          <div class="column-item">
-            <a href="<?php the_permalink(); ?>">
-              <div class="column-img-box">
-                <?php the_post_thumbnail(); ?>
-              </div>
-              <h3><?php the_title(); ?></h3>
-            </a>
-          </div>
-        <?php endwhile; ?>
-      <?php endif; ?>
-    </div>
-  </section>
-</div><!--container-->
+    <section>
+      <h2 class="h2-topic">MEMBER</h2>
+      <div class="content">
+        <div class="service-item fadeIn">
+          <img src="" alt="okutani">
+          <h2>okutani</h2>
+          <p>
+            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
+            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
+            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
+          </p>
+        </div>
+        <div class="service-item fadeIn">
+          <img src="" alt="kimura">
+          <h2>kimura</h2>
+          <p>
+            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
+            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
+            自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介自己紹介
+          </p>
+        </div>
 
-<section id="contact" class="contact">
-  <h2 class="h2-topic">CONTACT</h2>
-  <p>HP作成やシステム開発などのお仕事のご依頼は、お気軽にご相談ください。</p>
-  <a class="ToContactForm" href="/contact">お問い合わせ</a>
-</section>
-<?php get_footer(); ?>
-  </body>
+      </div>
+    </section>
+
+    <section id="column" class="column inner">
+      <h2 class="h2-topic">COLUMN</h2>
+      <div class="column-item-box">
+        <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
+            <div class="column-item">
+              <a href="<?php the_permalink(); ?>">
+                <div class="column-img-box">
+                  <?php the_post_thumbnail(); ?>
+                </div>
+                <h3><?php the_title(); ?></h3>
+              </a>
+            </div>
+          <?php endwhile; ?>
+        <?php endif; ?>
+      </div>
+    </section>
+  </div><!--container-->
+
+  <section id="contact" class="contact">
+    <h2 class="h2-topic">CONTACT</h2>
+    <p>HP作成やシステム開発などのお仕事のご依頼は、お気軽にご相談ください。</p>
+    <a class="ToContactForm" href="/contact">お問い合わせ</a>
+  </section>
+  <?php get_footer(); ?>
+</body>
 </html>
