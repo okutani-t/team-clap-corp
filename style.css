@@ -337,6 +337,12 @@ service,member
 .member .content .member-item {
   width: 30%;
 }
+@media screen and (max-width: 767px) {
+  .service .content .member-item,
+  .member .content .member-item {
+    width: 100%;
+  }
+}
 
 /*----------------
 column
