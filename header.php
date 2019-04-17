@@ -49,6 +49,7 @@
       <?php if (is_home() || is_front_page()) : ?>
         <li><a class="first-item" href="#about">ABOUT</a></li>
         <li><a href="#service">SERVICE</a></li>
+        <li><a href="#member">MEMBER</a></li>
         <li><a href="#column">COLUMN</a></li>
         <li><a href="#contact">CONTACT</a></li>
       <?php else : ?>

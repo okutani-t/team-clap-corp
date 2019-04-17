@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-   Theme Name: habakiri-child
-   Template: habakiri
- */
+Theme Name: habakiri-child
+Template: habakiri
+*/
 html {
   font-size: 62.5%;
   width: 100%;
@@ -131,11 +131,10 @@ header#header {
   height: 110px;
   z-index: 99;
   padding: 0 20px;
-  transition: height .8s;
 }
 @media screen and (max-width: 767px) {
   header#header {
-    height: 120px;
+    height: auto;
     flex-direction: column;
     padding: 0;
   }
@@ -146,7 +145,15 @@ header#header.active {
 }
 @media screen and (max-width: 767px) {
   header#header.active {
-    height: 100px;
+    height: auto;
+  }
+}
+header#header.active ul.global-nav {
+  transition: padding-top .8s;
+}
+@media screen and (max-width: 767px) {
+  header#header.active ul.global-nav {
+    padding-top: 0 !important;
   }
 }
 header#header .logo {
@@ -163,7 +170,7 @@ header#header .logo .h1-logo {
   display: none;
 }
 header#header .logo .h1-img {
-  width: 230px;
+  width: 200px;
   padding-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
@@ -172,39 +179,39 @@ header#header .logo .h1-img {
     margin: 15px 0 0;
   }
 }
-header#header .global-nav {
+header#header ul.global-nav {
+  overflow: auto;
   font-size: 18px;
   display: flex;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
-  header#header .global-nav {
+  header#header ul.global-nav {
     margin: 0;
     padding: 10px;
-    justify-content: space-evenly;
   }
 }
-header#header .global-nav li {
+header#header ul.global-nav li {
   display: inline-block;
   padding-right: 15px;
 }
-header#header .global-nav li a {
+header#header ul.global-nav li a {
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 5px;
   text-align: center;
   margin: 0 5px;
   color: black;
 }
-header#header .global-nav li a:hover {
+header#header ul.global-nav li a:hover {
   border-bottom: 4px solid #ffc600;
 }
 @media screen and (max-width: 767px) {
-  header#header .global-nav li a {
+  header#header ul.global-nav li a {
     font-size: 16px;
   }
 }
-header#header .global-nav li:last-child {
+header#header ul.global-nav li:last-child {
   padding-right: 0;
 }
 
@@ -253,8 +260,8 @@ section h2 {
 }
 
 /*----------------
-   about
-   ----------------*/
+about
+----------------*/
 .about {
   background-color: rgba(251, 249, 249, 0.9);
   border-radius: 50px;
@@ -269,8 +276,8 @@ section h2 {
 }
 
 /*----------------
-   service,member
-   ----------------*/
+service,member
+----------------*/
 .service,
 .member {
   width: 100%;
@@ -332,8 +339,8 @@ section h2 {
 }
 
 /*----------------
-   column
-   ----------------*/
+column
+----------------*/
 section.column .column-item-box {
   display: flex;
   flex-wrap: wrap;
@@ -380,8 +387,8 @@ section.column .column-item-box .column-item a h3 {
 }
 
 /*----------------
-   contact
-   ----------------*/
+contact
+----------------*/
 .contact {
   background-color: #f2f1f1;
   padding: 0 10px 40px;
@@ -418,8 +425,8 @@ section.column .column-item-box .column-item a h3 {
 }
 
 /*----------------
-   footer
-   ----------------*/
+footer
+----------------*/
 footer#footer {
   background-color: #e5e1e1;
   max-width: 100%;
@@ -505,8 +512,8 @@ footer#footer .copyright {
 }
 
 /*----------------
-   backTop
-   ----------------*/
+backTop
+----------------*/
 #backTop {
   position: fixed;
   bottom: 5%;
@@ -522,8 +529,8 @@ footer#footer .copyright {
 }
 
 /*----------------
-   responsive
-   ----------------*/
+responsive
+----------------*/
 @media screen and (max-width: 767px) {
   .motto-desc {
     line-height: 1.5;
@@ -532,8 +539,8 @@ footer#footer .copyright {
   }
 
   /*----------------
-     about
-     ---------------*/
+  about
+  ---------------*/
   .about-desc {
     font-size: 20px;
     line-height: 24px;
@@ -541,8 +548,8 @@ footer#footer .copyright {
   }
 
   /*----------------
-     service
-     ---------------*/
+  service
+  ---------------*/
   .service-item {
     width: 100%;
   }
@@ -556,8 +563,8 @@ footer#footer .copyright {
   }
 
   /*----------------
-     footer
-     ---------------*/
+  footer
+  ---------------*/
   #footer nav ul {
     padding-left: 0;
   }
