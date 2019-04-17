@@ -27,6 +27,7 @@ header#header {
   height: 110px;
   z-index: 99;
   padding: 0 20px;
+  transition: height .8s;
   @include sp {
     height: auto;
     flex-direction: column;
@@ -78,7 +79,7 @@ header#header {
       padding-right: 15px;
       a {
         display: inline-block;
-        padding-top: 10px;
+        padding-top: 15px;
         padding-bottom: 5px;
         text-align: center;
         margin: 0 5px;
@@ -88,6 +89,7 @@ header#header {
         }
         @include sp {
           font-size: 16px;
+          padding-top: 10px;
         }
       }
 
